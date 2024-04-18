@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Intro JS - getelements by tagname</title>
+	</head>
+	<body>
+		
+		<h1>JavaScript HTML DOM - searching for elements by tagname </h1>
+
+		<p id="intro">Finding HTML Elements by tag</p>
+		<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+		<ul>
+			<li>Coffee</li>
+			<li>Tea</li>
+		</ul>
+
+		<p>Click "Change" to change the text of the first list item.</p>
+		<button onclick="myFunction()">Change</button>
+
+		<script>
+			function myFunction() {
+				const list = document.getElementsByTagName("UL")[0];
+				list.getElementsByTagName("li")[0].innerHTML = "Milk";
+			}
+		</script>
+	</body>
+</html>

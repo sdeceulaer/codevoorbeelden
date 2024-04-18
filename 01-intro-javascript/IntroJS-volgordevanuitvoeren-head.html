@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Intro JS - volgorde van uitvoeren - code voorbeeld</title>
+		<script>
+/* 			window.onload = function() {
+				document.getElementById("intro").innerHTML = "Original text is replaced by me, after the window is loaded.";
+				document.getElementById("intro").innerHTML = "Original text is changed by me, after the window is loaded.";
+			}  */
+
+			document.getElementById("intro").innerHTML = "Original text is replaced by me.";
+			document.getElementById("intro").innerHTML = "Original text is changed by me.";
+			
+			function myFunction() {
+				document.getElementById("intro").innerHTML = "Paragraph changed by onclick event button.";
+			}
+		</script>	
+	</head>
+	<body>
+		<h1>Volgorde van JavaScript uitvoeren - volgorde van code en HTML</h1>
+
+		<p id="intro">Execution order of JavaScript.</p>
+		<button type="button" onclick="myFunction()">Try it</button>
+
+	</body>
+</html>
+<!-- bron: w3schools.com -->
